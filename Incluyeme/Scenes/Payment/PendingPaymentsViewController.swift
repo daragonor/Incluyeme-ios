@@ -1,14 +1,14 @@
 //
-//  ScheduleViewController.swift
+//  PendingPaymentsViewController.swift
 //  Incluyeme
 //
-//  Created by Developer on 6/3/19.
+//  Created by Developer on 6/4/19.
 //  Copyright © 2019 Developer. All rights reserved.
 //
 
 import UIKit
 
-class ScheduleViewController: UIViewController {
+class PendingPaymentsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,4 +19,5 @@ class ScheduleViewController: UIViewController {
     @IBAction func backAction(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }
+
 }

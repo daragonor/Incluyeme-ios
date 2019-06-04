@@ -18,8 +18,14 @@
 		8B176CDB22A5E74E00ED1DBE /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CDA22A5E74E00ED1DBE /* LoginService.swift */; };
 		8B176CDE22A5E88A00ED1DBE /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CDD22A5E88A00ED1DBE /* LoginResponse.swift */; };
 		8B176CE022A5EB4D00ED1DBE /* CoursesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CDF22A5EB4D00ED1DBE /* CoursesResponse.swift */; };
+		8B176CE222A6F87700ED1DBE /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CE122A6F87700ED1DBE /* ScheduleResponse.swift */; };
+		8B176CE422A6FF0900ED1DBE /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CE322A6FF0900ED1DBE /* GradesViewController.swift */; };
+		8B176CE722A6FFA900ED1DBE /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CE622A6FFA900ED1DBE /* PaymentViewController.swift */; };
+		8B176CE922A6FFBE00ED1DBE /* DonePaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CE822A6FFBE00ED1DBE /* DonePaymentsViewController.swift */; };
+		8B176CEB22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CEA22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift */; };
+		8B176CEE22A70CEA00ED1DBE /* BaseBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B176CED22A70CEA00ED1DBE /* BaseBoxView.xib */; };
+		8B176CF122A70DFF00ED1DBE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CF022A70DFF00ED1DBE /* BaseTableViewCell.swift */; };
 		8B87A2AB229F58B000AD7CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87A2AA229F58B000AD7CA3 /* AppDelegate.swift */; };
-		8B87A2AD229F58B000AD7CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87A2AC229F58B000AD7CA3 /* ViewController.swift */; };
 		8B87A2B0229F58B000AD7CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B87A2AE229F58B000AD7CA3 /* Main.storyboard */; };
 		8B87A2B2229F58B300AD7CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B87A2B1229F58B300AD7CA3 /* Assets.xcassets */; };
 		8B87A2B5229F58B300AD7CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B87A2B3229F58B300AD7CA3 /* LaunchScreen.storyboard */; };
@@ -37,9 +43,15 @@
 		8B176CDA22A5E74E00ED1DBE /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		8B176CDD22A5E88A00ED1DBE /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		8B176CDF22A5EB4D00ED1DBE /* CoursesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesResponse.swift; sourceTree = "<group>"; };
+		8B176CE122A6F87700ED1DBE /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
+		8B176CE322A6FF0900ED1DBE /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
+		8B176CE622A6FFA900ED1DBE /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		8B176CE822A6FFBE00ED1DBE /* DonePaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonePaymentsViewController.swift; sourceTree = "<group>"; };
+		8B176CEA22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingPaymentsViewController.swift; sourceTree = "<group>"; };
+		8B176CED22A70CEA00ED1DBE /* BaseBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseBoxView.xib; sourceTree = "<group>"; };
+		8B176CF022A70DFF00ED1DBE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		8B87A2A7229F58B000AD7CA3 /* Incluyeme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Incluyeme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B87A2AA229F58B000AD7CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B87A2AC229F58B000AD7CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B87A2AF229F58B000AD7CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B87A2B1229F58B300AD7CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B87A2B4229F58B300AD7CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +72,8 @@
 		8B176CC122A5DC9400ED1DBE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8B176CEF22A70DDB00ED1DBE /* Cells */,
+				8B176CE522A6FF8E00ED1DBE /* Payment */,
 				8B176CD022A5DF3300ED1DBE /* Courses */,
 				8B176CC422A5DCBC00ED1DBE /* Schedule */,
 				8B176CC322A5DC9E00ED1DBE /* Home */,
@@ -106,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				8B176CD122A5DF4300ED1DBE /* CoursesViewController.swift */,
+				8B176CE322A6FF0900ED1DBE /* GradesViewController.swift */,
 			);
 			path = Courses;
 			sourceTree = "<group>";
@@ -140,8 +155,37 @@
 			children = (
 				8B176CDD22A5E88A00ED1DBE /* LoginResponse.swift */,
 				8B176CDF22A5EB4D00ED1DBE /* CoursesResponse.swift */,
+				8B176CE122A6F87700ED1DBE /* ScheduleResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8B176CE522A6FF8E00ED1DBE /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				8B176CE622A6FFA900ED1DBE /* PaymentViewController.swift */,
+				8B176CE822A6FFBE00ED1DBE /* DonePaymentsViewController.swift */,
+				8B176CEA22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		8B176CEC22A70C9F00ED1DBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B87A2B3229F58B300AD7CA3 /* LaunchScreen.storyboard */,
+				8B87A2AE229F58B000AD7CA3 /* Main.storyboard */,
+				8B176CED22A70CEA00ED1DBE /* BaseBoxView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B176CEF22A70DDB00ED1DBE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8B176CF022A70DFF00ED1DBE /* BaseTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		8B87A29E229F58B000AD7CA3 = {
@@ -163,15 +207,13 @@
 		8B87A2A9229F58B000AD7CA3 /* Incluyeme */ = {
 			isa = PBXGroup;
 			children = (
+				8B176CEC22A70C9F00ED1DBE /* Resources */,
 				8B176CDC22A5E87800ED1DBE /* Models */,
 				8B176CD722A5E66B00ED1DBE /* Data */,
 				8B176CD322A5E13200ED1DBE /* Helpers */,
 				8B176CC122A5DC9400ED1DBE /* Scenes */,
 				8B87A2AA229F58B000AD7CA3 /* AppDelegate.swift */,
-				8B87A2AC229F58B000AD7CA3 /* ViewController.swift */,
-				8B87A2AE229F58B000AD7CA3 /* Main.storyboard */,
 				8B87A2B1229F58B300AD7CA3 /* Assets.xcassets */,
-				8B87A2B3229F58B300AD7CA3 /* LaunchScreen.storyboard */,
 				8B87A2B6229F58B400AD7CA3 /* Info.plist */,
 			);
 			path = Incluyeme;
@@ -238,6 +280,7 @@
 				8B87A2B5229F58B300AD7CA3 /* LaunchScreen.storyboard in Resources */,
 				8B87A2B2229F58B300AD7CA3 /* Assets.xcassets in Resources */,
 				8B87A2B0229F58B000AD7CA3 /* Main.storyboard in Resources */,
+				8B176CEE22A70CEA00ED1DBE /* BaseBoxView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,15 +294,20 @@
 				8B176CCF22A5DF2E00ED1DBE /* WeekViewController.swift in Sources */,
 				8B176CD222A5DF4300ED1DBE /* CoursesViewController.swift in Sources */,
 				8B176CDE22A5E88A00ED1DBE /* LoginResponse.swift in Sources */,
+				8B176CE722A6FFA900ED1DBE /* PaymentViewController.swift in Sources */,
+				8B176CF122A70DFF00ED1DBE /* BaseTableViewCell.swift in Sources */,
+				8B176CE222A6F87700ED1DBE /* ScheduleResponse.swift in Sources */,
 				8B176CCB22A5DEB700ED1DBE /* HomeViewController.swift in Sources */,
 				8B176CC922A5DE7600ED1DBE /* AuthorizationViewController.swift in Sources */,
 				8B176CE022A5EB4D00ED1DBE /* CoursesResponse.swift in Sources */,
 				8B176CC622A5DCDB00ED1DBE /* LoginViewController.swift in Sources */,
+				8B176CE922A6FFBE00ED1DBE /* DonePaymentsViewController.swift in Sources */,
 				8B176CD622A5E14E00ED1DBE /* BaseViewController.swift in Sources */,
+				8B176CE422A6FF0900ED1DBE /* GradesViewController.swift in Sources */,
 				8B176CDB22A5E74E00ED1DBE /* LoginService.swift in Sources */,
+				8B176CEB22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift in Sources */,
 				8B176CD922A5E68700ED1DBE /* IncluyemeAPI.swift in Sources */,
 				8B176CCD22A5DEC000ED1DBE /* ScheduleViewController.swift in Sources */,
-				8B87A2AD229F58B000AD7CA3 /* ViewController.swift in Sources */,
 				8B87A2AB229F58B000AD7CA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

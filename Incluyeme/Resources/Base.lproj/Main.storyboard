@@ -24,6 +24,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="INGRESAR"/>
+                                <connections>
+                                    <action selector="proceedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fI3-DI-4z7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIENVENIDO ALUMNO, PARA CONTINUAR NECESITAMOS TU HUELLA DACTILAR." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBo-ol-YcW">
                                 <rect key="frame" x="0.0" y="20.000000000000007" width="414" height="89.666666666666686"/>
@@ -54,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="45" y="15"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="LgR-Jc-Wdo">
             <objects>
-                <viewController id="Ldw-dU-fVe" customClass="Home" sceneMemberID="viewController">
+                <viewController id="Ldw-dU-fVe" customClass="HomeViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8tc-Xy-dgB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,6 +108,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="Ldw-dU-fVe" eventType="touchUpInside" id="dk8-6l-G4z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="890" y="15"/>
         </scene>
-        <!--View Controller-->
+        <!--Week View Controller-->
         <scene sceneID="Z2P-8O-Hqp">
             <objects>
-                <viewController id="NHQ-qB-nZr" sceneMemberID="viewController">
+                <viewController id="NHQ-qB-nZr" customClass="WeekViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DfI-5z-8Lb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +208,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="NHQ-qB-nZr" eventType="touchUpInside" id="ySq-Hd-EQw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -252,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="1722" y="-683"/>
         </scene>
-        <!--View Controller-->
+        <!--Schedule View Controller-->
         <scene sceneID="IWN-zl-s6N">
             <objects>
-                <viewController id="hRb-6L-v4Q" sceneMemberID="viewController">
+                <viewController id="hRb-6L-v4Q" customClass="ScheduleViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wh5-UK-RjL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,6 +291,9 @@ DE 8AM A 10 AM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="hRb-6L-v4Q" eventType="touchUpInside" id="dqn-l9-eAA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVI-yl-TTG">
                                 <rect key="frame" x="0.0" y="199" width="414" height="89.666666666666686"/>
@@ -319,10 +331,10 @@ DE 10AM A 12 PM</string>
             </objects>
             <point key="canvasLocation" x="2477" y="-692"/>
         </scene>
-        <!--View Controller-->
+        <!--Courses View Controller-->
         <scene sceneID="2cK-DA-syJ">
             <objects>
-                <viewController id="qKe-m5-UgJ" sceneMemberID="viewController">
+                <viewController id="qKe-m5-UgJ" customClass="CoursesViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ser-LM-1Ar">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -347,6 +359,9 @@ DE 10AM A 12 PM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="qKe-m5-UgJ" eventType="touchUpInside" id="q8k-aw-0zv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -374,10 +389,10 @@ DE 10AM A 12 PM</string>
             </objects>
             <point key="canvasLocation" x="1722" y="15"/>
         </scene>
-        <!--View Controller-->
+        <!--Grades View Controller-->
         <scene sceneID="NBo-eS-Za9">
             <objects>
-                <viewController id="QHq-u4-rRv" sceneMemberID="viewController">
+                <viewController id="QHq-u4-rRv" customClass="GradesViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYf-cF-bIe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -401,6 +416,9 @@ DE 10AM A 12 PM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="QHq-u4-rRv" eventType="touchUpInside" id="xN6-fj-SaR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -423,12 +441,12 @@ DE 10AM A 12 PM</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koP-SI-Ij8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2514" y="34"/>
+            <point key="canvasLocation" x="2512" y="15"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Hoi-EZ-TxN">
             <objects>
-                <viewController id="ZTM-Z1-4hR" sceneMemberID="viewController">
+                <viewController id="ZTM-Z1-4hR" customClass="LoginViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4eH-Ur-vkg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,10 +482,10 @@ DE 10AM A 12 PM</string>
             </objects>
             <point key="canvasLocation" x="419" y="753"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="AhE-6h-7DX">
             <objects>
-                <viewController id="lJ4-Ye-c7H" sceneMemberID="viewController">
+                <viewController id="lJ4-Ye-c7H" customClass="PaymentViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SOP-0x-VE5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,6 +503,9 @@ DE 10AM A 12 PM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="lJ4-Ye-c7H" eventType="touchUpInside" id="C3T-hW-dug"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhU-0D-qE8">
                                 <rect key="frame" x="0.0" y="199" width="414" height="89.666666666666686"/>
@@ -492,6 +513,9 @@ DE 10AM A 12 PM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="PAGOS REALIZADOS"/>
+                                <connections>
+                                    <segue destination="5V3-q0-AWp" kind="show" id="IgH-Cx-HW3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8Y-w0-evj">
                                 <rect key="frame" x="0.0" y="109.66666666666669" width="414" height="89.333333333333314"/>
@@ -499,6 +523,9 @@ DE 10AM A 12 PM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="PAGOS PENDIENTES"/>
+                                <connections>
+                                    <segue destination="Dvc-hI-Hm5" kind="show" id="j3e-Wo-B20"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -522,19 +549,15 @@ DE 10AM A 12 PM</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q60-Mj-t5W"/>
                     </view>
-                    <connections>
-                        <segue destination="Dvc-hI-Hm5" kind="show" id="Qwd-ou-u4A"/>
-                        <segue destination="5V3-q0-AWp" kind="show" id="Klt-Lr-eKr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3k0-Hl-Qq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1722" y="973"/>
         </scene>
-        <!--View Controller-->
+        <!--Done Payments View Controller-->
         <scene sceneID="s6r-nM-Jsu">
             <objects>
-                <viewController id="5V3-q0-AWp" sceneMemberID="viewController">
+                <viewController id="5V3-q0-AWp" customClass="DonePaymentsViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ScW-II-lWz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -551,6 +574,9 @@ DE 10AM A 12 PM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="5V3-q0-AWp" eventType="touchUpInside" id="Kea-jb-aD9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOLETA NÚMERO 1 POR 1500 SOLES CANCELADA EL PRIMERO DE MARZO DE 2019." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsw-0h-546">
                                 <rect key="frame" x="0.0" y="109.66666666666669" width="414" height="89.333333333333314"/>
@@ -581,10 +607,10 @@ DE 10AM A 12 PM</string>
             </objects>
             <point key="canvasLocation" x="2513" y="1413"/>
         </scene>
-        <!--View Controller-->
+        <!--Pending Payments View Controller-->
         <scene sceneID="WAn-fb-0R4">
             <objects>
-                <viewController id="Dvc-hI-Hm5" sceneMemberID="viewController">
+                <viewController id="Dvc-hI-Hm5" customClass="PendingPaymentsViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bdd-pR-Xt2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -602,6 +628,9 @@ DE 10AM A 12 PM</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ATRÁS"/>
+                                <connections>
+                                    <action selector="backAction:" destination="Dvc-hI-Hm5" eventType="touchUpInside" id="jHM-FR-lqr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

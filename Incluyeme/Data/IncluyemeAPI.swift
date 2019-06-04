@@ -12,6 +12,8 @@ enum IncluyemeURL: String{
     case baseUrl = "localhost:3000/api"
     case login = "localhost:3000/api/login"
     case courses = "localhost:3000/api/courses"
+    case schedule = "localhost:3000/api/schedule"
+
 }
 enum HTTPMethod: String{
     case post = "POST"

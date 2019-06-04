@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Service<T: Codable>: Codable {
+struct Response<T: Codable>: Codable {
     var response: T
 }
-struct loginServiceResponse: Codable {
-    var loginResponse: loginResponse
+struct LoginBodyResponse: Codable {
+    var loginResponse: LoginResponse
 }
-struct loginResponse: Codable{
+struct LoginResponse: Codable{
     var status: String
     var message: String
 }
