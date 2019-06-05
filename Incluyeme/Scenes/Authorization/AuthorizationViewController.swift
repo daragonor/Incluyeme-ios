@@ -16,15 +16,7 @@ class AuthorizationViewController: UIViewController {
     
     @IBAction func proceedAction(_ sender: Any) {
         if (!Utils.checkInternetConnection()){
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "InternetAlertViewController")
-            viewController.definesPresentationContext = true
-            viewController.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
-            viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            self.present(viewController,animated: true, completion: {
-                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5), execute: {
-                    exit(0)
-                })
-            })
+            Utils.internetAlert(self)
         }else{
             performSegue(withIdentifier: "HomeSegue", sender: nil)
         }

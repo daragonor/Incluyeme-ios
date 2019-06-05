@@ -8,31 +8,35 @@
 
 import Foundation
 
-enum IncluyemeURL: String{
+enum IncluyemeKey: String{
     
-    case login = "https://incluyeme.herokuapp.com/api/login"
-    case courses = "https://incluyeme.herokuapp.com/api/courses"
-    case schedule = "https://incluyeme.herokuapp.com/api/schedule"
-    case grades = "https://incluyeme.herokuapp.com/api/coursesgrades"
+    case login = "/login"
+    case courses = "/courses"
+    case schedule = "/schedule"
+    case grades = "/coursesgrades"
+    func url() -> String {
+        return "https://incluyeme.herokuapp.com/api\(self.rawValue)"
+    }
 
 }
 enum HTTPMethod: String{
     case post = "POST"
 }
-class IncluyemeAPI {
+class IncluyemeAPI<I:Codable> {
     static func handleError(error: Error) {
         print("Error while requesting Data: \(error.localizedDescription)")
     }
     static func service<T:Decodable>(
         method: HTTPMethod,
-        urlString: IncluyemeURL,
+        urlString: String,
         headers: [String: String],
         body: Data?,
         responseType: T.Type,
         responseHandler: @escaping ((T) -> (Void)),
-        errorHandler: @escaping ((Error) -> (Void)) = handleError){
+        errorHandler: @escaping ((Error) -> (Void)) = handleError,
+        key: IncluyemeKey){
         
-        guard let endpointUrl = URL(string: urlString.rawValue) else {
+        guard let endpointUrl = URL(string: urlString) else {
             print("Failed at url")
             return
         }
@@ -64,6 +68,7 @@ class IncluyemeAPI {
             }
             do {
                 let dataResponse = try JSONDecoder().decode(responseType.self, from: data)
+                UserDefaults.standard.set(data, forKey: key.rawValue)
                 print(dataResponse)
                 DispatchQueue.main.async { responseHandler(dataResponse) }
             }catch{
@@ -71,5 +76,16 @@ class IncluyemeAPI {
             }
         }
         task.resume()
+    }
+    static public func get(_ key: IncluyemeKey,responseHandler: @escaping (Response<I>) -> (Void),errorHandler: @escaping (Error) -> ()){
+        self.service(method: .post,
+                     urlString: key.url(),
+                     headers: [:],
+                     body: nil,
+                     responseType: Response.self,
+                     responseHandler: responseHandler,
+                     errorHandler: errorHandler,
+                     key: key
+        )
     }
 }

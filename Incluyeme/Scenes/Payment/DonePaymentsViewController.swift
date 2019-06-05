@@ -19,6 +19,11 @@ class DonePaymentsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        if (!Utils.checkInternetConnection()){
+            Utils.internetAlert(self)
+        }
+    }
     
     @IBAction func backAction(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)

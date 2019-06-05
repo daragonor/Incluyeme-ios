@@ -13,20 +13,32 @@ class GradesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var grades: [GradeResponse] = []
-    
+    var key = IncluyemeKey.grades
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "BaseAlterTableViewCell", bundle: nil), forCellReuseIdentifier: "BaseAlterTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
-        IncluyemeAPI.getGrades(responseHandler: {
+        IncluyemeAPI<GradesBodyResponse>.get(key,responseHandler: {
             data in
             self.grades = data.response.responseGradesList.list
             self.grades.removeFirst()
             self.tableView.reloadData()
+        },errorHandler: {_ in
+            if let data = UserDefaults.standard.data(forKey: self.key.rawValue),
+                let response = try? JSONDecoder().decode(GradesBodyResponse.self, from: data){
+                self.grades = response.responseGradesList.list
+                self.grades.removeFirst()
+                print(self.grades)
+            }
         })
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if (!Utils.checkInternetConnection()){
+            Utils.internetAlert(self)
+        }
+    }
 
     @IBAction func backAction(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)

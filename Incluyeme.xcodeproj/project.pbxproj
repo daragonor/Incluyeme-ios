@@ -136,7 +136,7 @@
 		8B176CD322A5E13200ED1DBE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8B176CF722A7418200ED1DBE /* New Group */,
+				8B176CF722A7418200ED1DBE /* Utils */,
 				8B176CD422A5E13700ED1DBE /* UI */,
 			);
 			path = Helpers;
@@ -199,13 +199,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		8B176CF722A7418200ED1DBE /* New Group */ = {
+		8B176CF722A7418200ED1DBE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				8B176CFA22A741F900ED1DBE /* Reachability.swift */,
 				8B176CFC22A7424100ED1DBE /* Utils.swift */,
 			);
-			path = "New Group";
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8B87A29E229F58B000AD7CA3 = {

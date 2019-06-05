@@ -13,17 +13,23 @@ class CoursesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var courses: [CourseResponse] = []
-    
+    var key = IncluyemeKey.courses
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "BaseTableViewCell", bundle: nil), forCellReuseIdentifier: "BaseTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.allowsSelection = true
-        IncluyemeAPI.getCourses(responseHandler: {
+        IncluyemeAPI<CourseBodyResponse>.get(.courses,responseHandler: {
             data in
             self.courses = data.response.courseListResponse.courseList
             self.tableView.reloadData()
+        },errorHandler: { _ in
+            if let data = UserDefaults.standard.data(forKey: self.key.rawValue),
+                let response = try? JSONDecoder().decode(CourseBodyResponse.self, from: data){
+                self.courses = response.courseListResponse.courseList
+                print(self.courses)
+            }
         })
     }
     

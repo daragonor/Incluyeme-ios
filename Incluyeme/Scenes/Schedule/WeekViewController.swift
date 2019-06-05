@@ -18,12 +18,18 @@ class WeekViewController: UIViewController {
         case sabado = "SÁBADO"
     }
     var classes: [ScheduleClassesResponse] = []
+    var key = IncluyemeKey.schedule
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        IncluyemeAPI.getSchedule(responseHandler: {
-            data in
+        IncluyemeAPI<ScheduleBodyResponse>.get(.schedule, responseHandler: {data in
             self.classes = data.response.scheduleResponse.detail.classes
+        },errorHandler: {_ in
+            if let data = UserDefaults.standard.data(forKey: self.key.rawValue),
+                    let response = try? JSONDecoder().decode(ScheduleBodyResponse.self, from: data){
+                self.classes = response.scheduleResponse.detail.classes
+                print(self.classes)
+            }
         })
     }
     

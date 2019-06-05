@@ -16,12 +16,16 @@ class ScheduleViewController: UIViewController {
         tableView.register(UINib(nibName: "BaseAlterTableViewCell", bundle: nil), forCellReuseIdentifier: "BaseAlterTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.allowsSelection = true
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        if (!Utils.checkInternetConnection()){
+            Utils.internetAlert(self)
+        }
+    }
     @IBAction func backAction(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }
+    
 }
 
 extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource{

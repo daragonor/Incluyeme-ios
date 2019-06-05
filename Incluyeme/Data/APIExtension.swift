@@ -7,8 +7,8 @@
 //
 
 import Foundation
-
-extension IncluyemeAPI{
+/*
+extension IncluyemeAPI<T>{
     static public func login(responseHandler: @escaping (Response<LoginBodyResponse>) -> (Void)){
         self.service(method: .post,
                      urlString: IncluyemeURL.login,
@@ -48,3 +48,4 @@ extension IncluyemeAPI{
         )
     }
 }
+*/
