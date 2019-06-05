@@ -20,7 +20,7 @@ extension IncluyemeAPI{
     }
     static public func getSchedule(responseHandler: @escaping (Response<ScheduleBodyResponse>) -> (Void)){
         self.service(method: .post,
-                     urlString: IncluyemeURL.login,
+                     urlString: IncluyemeURL.schedule,
                      headers: [:],
                      body: nil,
                      responseType: Response.self,

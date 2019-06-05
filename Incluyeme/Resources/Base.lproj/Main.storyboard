@@ -225,6 +225,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="LUNES"/>
+                                <connections>
+                                    <action selector="LunesButtonAction:" destination="NHQ-qB-nZr" eventType="touchUpInside" id="Bqn-mU-min"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcb-CN-vp6">
                                 <rect key="frame" x="0.0" y="157" width="320" height="68.5"/>
@@ -232,6 +235,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="MARTES"/>
+                                <connections>
+                                    <action selector="MartesButtonAction:" destination="NHQ-qB-nZr" eventType="touchUpInside" id="Hw6-t4-Gh3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P63-re-ilg">
                                 <rect key="frame" x="0.0" y="225.5" width="320" height="68.5"/>
@@ -239,6 +245,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="MIÉRCOLES"/>
+                                <connections>
+                                    <action selector="MiercolesButtonAction:" destination="NHQ-qB-nZr" eventType="touchUpInside" id="CsE-BA-KJZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDn-uF-yYd">
                                 <rect key="frame" x="0.0" y="294" width="320" height="68.5"/>
@@ -246,6 +255,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="JUEVES"/>
+                                <connections>
+                                    <action selector="JuevesButtonAction:" destination="NHQ-qB-nZr" eventType="touchUpInside" id="qTI-KF-dFi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKY-34-SeU">
                                 <rect key="frame" x="0.0" y="362.5" width="320" height="68.5"/>
@@ -253,6 +265,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="VIERNES"/>
+                                <connections>
+                                    <action selector="ViernesButtonAction:" destination="NHQ-qB-nZr" eventType="touchUpInside" id="5BP-I3-CCe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dr-y2-pWJ">
                                 <rect key="frame" x="0.0" y="431" width="320" height="68.5"/>
@@ -260,6 +275,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="SÁBADO"/>
+                                <connections>
+                                    <action selector="SabadoButtonAction:" destination="NHQ-qB-nZr" eventType="touchUpInside" id="M4X-sK-ezp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-Y5-wtU">
                                 <rect key="frame" x="0.0" y="499.5" width="320" height="68.5"/>
@@ -323,7 +341,7 @@
         <!--Schedule View Controller-->
         <scene sceneID="IWN-zl-s6N">
             <objects>
-                <viewController id="hRb-6L-v4Q" customClass="ScheduleViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScheduleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hRb-6L-v4Q" customClass="ScheduleViewController" customModule="Incluyeme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wh5-UK-RjL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,30 +372,25 @@ DE 8AM A 10 AM</string>
                                     <action selector="backAction:" destination="hRb-6L-v4Q" eventType="touchUpInside" id="dqn-l9-eAA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVI-yl-TTG">
-                                <rect key="frame" x="0.0" y="157" width="320" height="68.5"/>
-                                <string key="text">SISTEMAS OPERATIVOS,
-AULA B605,
-DE 10AM A 12 PM</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I6O-oO-QMB">
+                                <rect key="frame" x="0.0" y="88.5" width="320" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Yk-Xs-261" firstAttribute="height" secondItem="dqB-ng-Jrh" secondAttribute="height" id="0yB-OG-8Yh"/>
+                            <constraint firstItem="I6O-oO-QMB" firstAttribute="leading" secondItem="1a8-rE-ecG" secondAttribute="leading" id="7gu-yn-edQ"/>
                             <constraint firstItem="7Yk-Xs-261" firstAttribute="leading" secondItem="1a8-rE-ecG" secondAttribute="leading" id="8KW-Ai-7HI"/>
-                            <constraint firstItem="aVI-yl-TTG" firstAttribute="height" secondItem="dqB-ng-Jrh" secondAttribute="height" id="AF0-29-LVh"/>
                             <constraint firstItem="dqB-ng-Jrh" firstAttribute="leading" secondItem="1a8-rE-ecG" secondAttribute="leading" id="Aff-XX-Tay"/>
                             <constraint firstItem="UDX-mc-Sh6" firstAttribute="height" secondItem="dqB-ng-Jrh" secondAttribute="height" id="DWi-hK-W7H"/>
                             <constraint firstItem="dqB-ng-Jrh" firstAttribute="height" secondItem="1a8-rE-ecG" secondAttribute="height" multiplier="0.125" id="Dsx-YC-jje"/>
+                            <constraint firstItem="1a8-rE-ecG" firstAttribute="trailing" secondItem="I6O-oO-QMB" secondAttribute="trailing" id="Eh3-lg-4bD"/>
                             <constraint firstItem="1a8-rE-ecG" firstAttribute="trailing" secondItem="7Yk-Xs-261" secondAttribute="trailing" id="ICr-TV-4dl"/>
                             <constraint firstItem="1a8-rE-ecG" firstAttribute="trailing" secondItem="dqB-ng-Jrh" secondAttribute="trailing" id="LKd-L2-1j9"/>
-                            <constraint firstItem="aVI-yl-TTG" firstAttribute="leading" secondItem="1a8-rE-ecG" secondAttribute="leading" id="Pjq-mC-d9A"/>
-                            <constraint firstItem="1a8-rE-ecG" firstAttribute="trailing" secondItem="aVI-yl-TTG" secondAttribute="trailing" id="Wth-TL-QqD"/>
+                            <constraint firstItem="I6O-oO-QMB" firstAttribute="top" secondItem="dqB-ng-Jrh" secondAttribute="bottom" id="NZD-Og-i7c"/>
+                            <constraint firstItem="7Yk-Xs-261" firstAttribute="top" secondItem="I6O-oO-QMB" secondAttribute="bottom" id="RLR-qG-UcR"/>
                             <constraint firstItem="dqB-ng-Jrh" firstAttribute="top" secondItem="1a8-rE-ecG" secondAttribute="top" id="Xsp-BJ-cyf"/>
-                            <constraint firstItem="aVI-yl-TTG" firstAttribute="top" secondItem="UDX-mc-Sh6" secondAttribute="bottom" id="dOm-2J-Omv"/>
                             <constraint firstItem="UDX-mc-Sh6" firstAttribute="top" secondItem="dqB-ng-Jrh" secondAttribute="bottom" id="j4j-Oa-9nv"/>
                             <constraint firstItem="1a8-rE-ecG" firstAttribute="bottom" secondItem="7Yk-Xs-261" secondAttribute="bottom" id="kGT-c0-ojW"/>
                             <constraint firstItem="UDX-mc-Sh6" firstAttribute="leading" secondItem="1a8-rE-ecG" secondAttribute="leading" id="z0h-Dk-g6e"/>
@@ -385,10 +398,13 @@ DE 10AM A 12 PM</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1a8-rE-ecG"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="I6O-oO-QMB" id="nSZ-GP-C1U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k54-8U-OCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2477" y="-692"/>
+            <point key="canvasLocation" x="2475" y="-683"/>
         </scene>
         <!--Courses View Controller-->
         <scene sceneID="2cK-DA-syJ">
@@ -415,7 +431,7 @@ DE 10AM A 12 PM</string>
                                     <action selector="backAction:" destination="qKe-m5-UgJ" eventType="touchUpInside" id="q8k-aw-0zv"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pTb-fA-e3p">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pTb-fA-e3p">
                                 <rect key="frame" x="0.0" y="88.5" width="320" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -471,7 +487,7 @@ DE 10AM A 12 PM</string>
                                     <action selector="backAction:" destination="QHq-u4-rRv" eventType="touchUpInside" id="xN6-fj-SaR"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rYv-ij-89Z">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rYv-ij-89Z">
                                 <rect key="frame" x="0.0" y="88.5" width="320" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -499,7 +515,7 @@ DE 10AM A 12 PM</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koP-SI-Ij8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2512" y="15"/>
+            <point key="canvasLocation" x="2475" y="14"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Hoi-EZ-TxN">

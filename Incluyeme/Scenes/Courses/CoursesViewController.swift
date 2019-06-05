@@ -35,7 +35,8 @@ class CoursesViewController: UIViewController {
 
 extension CoursesViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UIScreen.main.bounds.height*0.125
+        let height = self.view.safeAreaLayoutGuide.layoutFrame.size.height
+        return height*0.125
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return courses.count
