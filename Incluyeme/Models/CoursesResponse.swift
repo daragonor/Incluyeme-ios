@@ -9,9 +9,11 @@
 import Foundation
 
 struct CourseBodyResponse: Codable{
+    var courseListResponse : CourseListResponse
+}
+struct CourseListResponse: Codable{
     var courseList : [CourseResponse]
 }
-
 struct CourseResponse: Codable{
     var itemTypeDescription: String
     var courseCodeDisplay: String
@@ -26,3 +28,4 @@ struct CourseResponse: Codable{
     var courseSection: String
     var courseCode: String
 }
+

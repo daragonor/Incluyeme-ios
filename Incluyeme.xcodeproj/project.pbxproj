@@ -15,7 +15,7 @@
 		8B176CD222A5DF4300ED1DBE /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CD122A5DF4300ED1DBE /* CoursesViewController.swift */; };
 		8B176CD622A5E14E00ED1DBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CD522A5E14E00ED1DBE /* BaseViewController.swift */; };
 		8B176CD922A5E68700ED1DBE /* IncluyemeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CD822A5E68700ED1DBE /* IncluyemeAPI.swift */; };
-		8B176CDB22A5E74E00ED1DBE /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CDA22A5E74E00ED1DBE /* LoginService.swift */; };
+		8B176CDB22A5E74E00ED1DBE /* APIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CDA22A5E74E00ED1DBE /* APIExtension.swift */; };
 		8B176CDE22A5E88A00ED1DBE /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CDD22A5E88A00ED1DBE /* LoginResponse.swift */; };
 		8B176CE022A5EB4D00ED1DBE /* CoursesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CDF22A5EB4D00ED1DBE /* CoursesResponse.swift */; };
 		8B176CE222A6F87700ED1DBE /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CE122A6F87700ED1DBE /* ScheduleResponse.swift */; };
@@ -23,8 +23,12 @@
 		8B176CE722A6FFA900ED1DBE /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CE622A6FFA900ED1DBE /* PaymentViewController.swift */; };
 		8B176CE922A6FFBE00ED1DBE /* DonePaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CE822A6FFBE00ED1DBE /* DonePaymentsViewController.swift */; };
 		8B176CEB22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CEA22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift */; };
-		8B176CEE22A70CEA00ED1DBE /* BaseBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B176CED22A70CEA00ED1DBE /* BaseBoxView.xib */; };
+		8B176CEE22A70CEA00ED1DBE /* BaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B176CED22A70CEA00ED1DBE /* BaseTableViewCell.xib */; };
 		8B176CF122A70DFF00ED1DBE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CF022A70DFF00ED1DBE /* BaseTableViewCell.swift */; };
+		8B176CF322A7298100ED1DBE /* GradesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CF222A7298100ED1DBE /* GradesResponse.swift */; };
+		8B176CF522A7305900ED1DBE /* BaseAlterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B176CF422A7305800ED1DBE /* BaseAlterTableViewCell.xib */; };
+		8B176CFB22A741F900ED1DBE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CFA22A741F900ED1DBE /* Reachability.swift */; };
+		8B176CFD22A7424100ED1DBE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B176CFC22A7424100ED1DBE /* Utils.swift */; };
 		8B87A2AB229F58B000AD7CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87A2AA229F58B000AD7CA3 /* AppDelegate.swift */; };
 		8B87A2B0229F58B000AD7CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B87A2AE229F58B000AD7CA3 /* Main.storyboard */; };
 		8B87A2B2229F58B300AD7CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B87A2B1229F58B300AD7CA3 /* Assets.xcassets */; };
@@ -40,7 +44,7 @@
 		8B176CD122A5DF4300ED1DBE /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		8B176CD522A5E14E00ED1DBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8B176CD822A5E68700ED1DBE /* IncluyemeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncluyemeAPI.swift; sourceTree = "<group>"; };
-		8B176CDA22A5E74E00ED1DBE /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		8B176CDA22A5E74E00ED1DBE /* APIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExtension.swift; sourceTree = "<group>"; };
 		8B176CDD22A5E88A00ED1DBE /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		8B176CDF22A5EB4D00ED1DBE /* CoursesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesResponse.swift; sourceTree = "<group>"; };
 		8B176CE122A6F87700ED1DBE /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
@@ -48,8 +52,12 @@
 		8B176CE622A6FFA900ED1DBE /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		8B176CE822A6FFBE00ED1DBE /* DonePaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonePaymentsViewController.swift; sourceTree = "<group>"; };
 		8B176CEA22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingPaymentsViewController.swift; sourceTree = "<group>"; };
-		8B176CED22A70CEA00ED1DBE /* BaseBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseBoxView.xib; sourceTree = "<group>"; };
+		8B176CED22A70CEA00ED1DBE /* BaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTableViewCell.xib; sourceTree = "<group>"; };
 		8B176CF022A70DFF00ED1DBE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		8B176CF222A7298100ED1DBE /* GradesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesResponse.swift; sourceTree = "<group>"; };
+		8B176CF422A7305800ED1DBE /* BaseAlterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseAlterTableViewCell.xib; sourceTree = "<group>"; };
+		8B176CFA22A741F900ED1DBE /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8B176CFC22A7424100ED1DBE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8B87A2A7229F58B000AD7CA3 /* Incluyeme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Incluyeme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B87A2AA229F58B000AD7CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B87A2AF229F58B000AD7CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 		8B176CD322A5E13200ED1DBE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8B176CF722A7418200ED1DBE /* New Group */,
 				8B176CD422A5E13700ED1DBE /* UI */,
 			);
 			path = Helpers;
@@ -145,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				8B176CD822A5E68700ED1DBE /* IncluyemeAPI.swift */,
-				8B176CDA22A5E74E00ED1DBE /* LoginService.swift */,
+				8B176CDA22A5E74E00ED1DBE /* APIExtension.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 				8B176CDD22A5E88A00ED1DBE /* LoginResponse.swift */,
 				8B176CDF22A5EB4D00ED1DBE /* CoursesResponse.swift */,
 				8B176CE122A6F87700ED1DBE /* ScheduleResponse.swift */,
+				8B176CF222A7298100ED1DBE /* GradesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,7 +185,8 @@
 			children = (
 				8B87A2B3229F58B300AD7CA3 /* LaunchScreen.storyboard */,
 				8B87A2AE229F58B000AD7CA3 /* Main.storyboard */,
-				8B176CED22A70CEA00ED1DBE /* BaseBoxView.xib */,
+				8B176CED22A70CEA00ED1DBE /* BaseTableViewCell.xib */,
+				8B176CF422A7305800ED1DBE /* BaseAlterTableViewCell.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -186,6 +197,15 @@
 				8B176CF022A70DFF00ED1DBE /* BaseTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8B176CF722A7418200ED1DBE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8B176CFA22A741F900ED1DBE /* Reachability.swift */,
+				8B176CFC22A7424100ED1DBE /* Utils.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		8B87A29E229F58B000AD7CA3 = {
@@ -207,10 +227,10 @@
 		8B87A2A9229F58B000AD7CA3 /* Incluyeme */ = {
 			isa = PBXGroup;
 			children = (
+				8B176CD322A5E13200ED1DBE /* Helpers */,
 				8B176CEC22A70C9F00ED1DBE /* Resources */,
 				8B176CDC22A5E87800ED1DBE /* Models */,
 				8B176CD722A5E66B00ED1DBE /* Data */,
-				8B176CD322A5E13200ED1DBE /* Helpers */,
 				8B176CC122A5DC9400ED1DBE /* Scenes */,
 				8B87A2AA229F58B000AD7CA3 /* AppDelegate.swift */,
 				8B87A2B1229F58B300AD7CA3 /* Assets.xcassets */,
@@ -280,7 +300,8 @@
 				8B87A2B5229F58B300AD7CA3 /* LaunchScreen.storyboard in Resources */,
 				8B87A2B2229F58B300AD7CA3 /* Assets.xcassets in Resources */,
 				8B87A2B0229F58B000AD7CA3 /* Main.storyboard in Resources */,
-				8B176CEE22A70CEA00ED1DBE /* BaseBoxView.xib in Resources */,
+				8B176CEE22A70CEA00ED1DBE /* BaseTableViewCell.xib in Resources */,
+				8B176CF522A7305900ED1DBE /* BaseAlterTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +325,14 @@
 				8B176CE922A6FFBE00ED1DBE /* DonePaymentsViewController.swift in Sources */,
 				8B176CD622A5E14E00ED1DBE /* BaseViewController.swift in Sources */,
 				8B176CE422A6FF0900ED1DBE /* GradesViewController.swift in Sources */,
-				8B176CDB22A5E74E00ED1DBE /* LoginService.swift in Sources */,
+				8B176CDB22A5E74E00ED1DBE /* APIExtension.swift in Sources */,
 				8B176CEB22A6FFCF00ED1DBE /* PendingPaymentsViewController.swift in Sources */,
 				8B176CD922A5E68700ED1DBE /* IncluyemeAPI.swift in Sources */,
 				8B176CCD22A5DEC000ED1DBE /* ScheduleViewController.swift in Sources */,
+				8B176CFD22A7424100ED1DBE /* Utils.swift in Sources */,
 				8B87A2AB229F58B000AD7CA3 /* AppDelegate.swift in Sources */,
+				8B176CFB22A741F900ED1DBE /* Reachability.swift in Sources */,
+				8B176CF322A7298100ED1DBE /* GradesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,17 @@ extension IncluyemeAPI{
     
     static public func getCourses(responseHandler: @escaping (Response<CourseBodyResponse>) -> (Void)){
         self.service(method: .post,
-                     urlString: IncluyemeURL.login,
+                     urlString: IncluyemeURL.courses,
+                     headers: [:],
+                     body: nil,
+                     responseType: Response.self,
+                     responseHandler: responseHandler
+        )
+    }
+    
+    static public func getGrades(responseHandler: @escaping (Response<GradesBodyResponse>) -> (Void)){
+        self.service(method: .post,
+                     urlString: IncluyemeURL.grades,
                      headers: [:],
                      body: nil,
                      responseType: Response.self,

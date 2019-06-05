@@ -10,9 +10,10 @@ import Foundation
 
 enum IncluyemeURL: String{
     case baseUrl = "localhost:3000/api"
-    case login = "localhost:3000/api/login"
-    case courses = "localhost:3000/api/courses"
-    case schedule = "localhost:3000/api/schedule"
+    case login = "http://localhost:3000/api/login"
+    case courses = "http://localhost:3000/api/courses"
+    case schedule = "http://localhost:3000/api/schedule"
+    case grades = "http://localhost:3000/api/coursesgrades"
 
 }
 enum HTTPMethod: String{

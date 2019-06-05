@@ -12,8 +12,14 @@ class AuthorizationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if (!Utils.checkInternetConnection()){
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "InternetAlertViewController")
+            viewController.definesPresentationContext = true
+            viewController.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+            viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            self.present(viewController,animated: true, completion: nil)
+        }
     }
     
     @IBAction func proceedAction(_ sender: Any) {
