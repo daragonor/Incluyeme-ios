@@ -13,7 +13,7 @@
         <!--Internet Alert View Controller-->
         <scene sceneID="uv8-z9-1vy">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dr-fl-rdR" customClass="InternetAlertViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InternetAlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dr-fl-rdR" customClass="InternetAlertViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V2p-DX-H0i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
