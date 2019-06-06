@@ -35,8 +35,17 @@ class WeekViewController: UIViewController {
     
     func goToSchedule(day: Day){
         let viewController = self.storyboard!.instantiateViewController(withIdentifier: "ScheduleViewController") as! ScheduleViewController
-        let data = classes.filter {$0.day == day.rawValue}
-        viewController.classes = data
+        var data = classes.filter {$0.day == day.rawValue}
+        var dayClasses: [ScheduleClassesResponse] = []
+        if data.count > 0{
+            dayClasses = [data[0]]
+            for n in 0..<data.count {
+                if dayClasses.last!.startTime != data[n].startTime{
+                    dayClasses.append(data[n])
+                }
+            }
+        }
+        viewController.classes = dayClasses
         self.present(viewController, animated: false, completion: nil)
     }
 
