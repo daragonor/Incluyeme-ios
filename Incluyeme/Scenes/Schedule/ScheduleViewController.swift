@@ -43,7 +43,7 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource{
         let classroom = classes[indexPath.row].classroom
         let startTime = Int(classes[indexPath.row].startTime.prefix(2))!
         let startHour = startTime > 12 ? "\(startTime - 12) PM" : "\(startTime) AM"
-        let endTime = Int(classes[indexPath.row].startTime.prefix(2))!
+        let endTime = Int(classes[indexPath.row].endTime.prefix(2))!
         let endHour = endTime > 12 ? "\(endTime - 12) PM" : "\(endTime) AM"
         let schedule = "DE \(startHour) A \(endHour)"
         cell.titleLabel.text = "\(className)\nAULA \(classroom)\n\(schedule)"
